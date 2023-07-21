@@ -68,3 +68,10 @@ button:hover,
 a:hover {
   cursor: pointer;
 }
+a, button{
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+*{
+  color: #fff;
+}
