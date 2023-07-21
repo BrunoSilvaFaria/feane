@@ -1,7 +1,7 @@
 // import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { IconCar, IconSearch, IconUser } from '../../assets/Icon';
+import { IconCar, IconSearch, IconUser } from '../../helpers/Icon';
 import { ButtonMenu } from '../Button/styles';
 
 import { Conteiner, Background } from './styles';

@@ -2,9 +2,10 @@ import {  css } from "styled-components";
 import { bodyHover } from "../helpers/tipografia";
 
 export const displayFlex = css`
-    display: flex;
-    align-items: center;
-`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 export const background = css`
     background-position: center center;
@@ -17,4 +18,9 @@ export const icon = css`
     path{
         ${bodyHover};
     }
+`
+
+export const alinhamento = css`
+    width: 90%;
+    margin: auto;
 `

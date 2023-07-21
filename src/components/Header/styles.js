@@ -8,7 +8,7 @@ import {
 } from "../../helpers/tipografia";
 
 export const Background = styled.div`
-    background: url('src/assets/hero-bg.jpg');
+    background: url('/assets/hero-bg.jpg');
     ${background};
     width: 100%;
     height: 630px;
@@ -22,7 +22,6 @@ export const Conteiner = styled.header`
     div,
     .icons{
         ${displayFlex};
-        justify-content: space-between;
     }
 
     .logo{
