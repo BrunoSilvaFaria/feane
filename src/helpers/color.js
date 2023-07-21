@@ -1,7 +1,8 @@
 // === Var ===
 const colors = {
-    white: "#fff",
+    whiteSmall: "#dbdbdb",
     yellowLight: "#ffbe33",
-    yellowDark: "#e69c00"
+    yellowDark: "#e69c00",
+    black: "#0c0c0c",
 }
 export default colors;
