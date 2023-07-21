@@ -1,13 +1,19 @@
 import { useState } from "react";
-import { Conteiner, Header } from "./styles";
-import { ButtonSmall } from "../../components/Button/styles";
-import { IconCar } from '../../helpers/Icon';
+import { Conteiner, Header, Cards } from "./styles";
+import { criaElementos } from '../../helpers/criaElementos';
+import { filtraElementos } from "../../helpers/filtraElementos";
+import menu from "../../data/menu";
+import Card from "../../components/Cards/Menu/Card";
+import { ButtonMenu } from "../../components/Button/styles";
+
 function Menu() {
-  const [activeLink, setActiveLink] = useState('all');
+  const [activeLink, setActiveLink] = useState('All');
   const handleLinkClick = (to) => {
     setActiveLink(to);
   };
 
+  const filtered = filtraElementos(menu, activeLink, 'type');
+  
   return (
     <Conteiner>
       <Header>
@@ -15,9 +21,9 @@ function Menu() {
         <ul>
           <li>
             <a
-              className={activeLink === "all" ? "active" : ""}
+              className={activeLink === "All" ? "active" : ""}
               onClick={() => {
-                handleLinkClick("all");
+                handleLinkClick("All");
               }}
             >
               All
@@ -25,9 +31,9 @@ function Menu() {
           </li>
           <li>
             <a
-              className={activeLink === "burguer" ? "active" : ""}
+              className={activeLink === "Burger" ? "active" : ""}
               onClick={() => {
-                handleLinkClick("burguer");
+                handleLinkClick("Burger");
               }}
             >
               Burguer
@@ -35,9 +41,9 @@ function Menu() {
           </li>
           <li>
             <a
-              className={activeLink === "pizza" ? "active" : ""}
+              className={activeLink === "Pizza" ? "active" : ""}
               onClick={() => {
-                handleLinkClick("pizza");
+                handleLinkClick("Pizza");
               }}
             >
               Pizza
@@ -45,9 +51,9 @@ function Menu() {
           </li>
           <li>
             <a
-              className={activeLink === "pasta" ? "active" : ""}
+              className={activeLink === "Pasta" ? "active" : ""}
               onClick={() => {
-                handleLinkClick("pasta");
+                handleLinkClick("Pasta");
               }}
             >
               Pasta
@@ -55,9 +61,9 @@ function Menu() {
           </li>
           <li>
             <a
-              className={activeLink === "fries" ? "active" : ""}
+              className={activeLink === "Fries" ? "active" : ""}
               onClick={() => {
-                handleLinkClick("fries");
+                handleLinkClick("Fries");
               }}
             >
               Fries
@@ -66,26 +72,12 @@ function Menu() {
         </ul>
       </Header>
 
-      <section>
-        <div className="background">
-          <img src="/assets/f1.png" alt="Foto de Produto" />
-        </div>
-
-        <div className="descripition">
-          <h4>Delicious Pizza</h4>
-          <p>
-            Veniam debitis quaerat officiis quasi cupiditate quo, quisquam
-            velit, magnam voluptatem repellendus sed eaque{" "}
-          </p>
-
-          <div className="footer">
-            <span>$20</span>
-            <ButtonSmall>
-              <IconCar className="icon"/>
-            </ButtonSmall>
-          </div>
-        </div>
-      </section>
+      <Cards >
+        <article>{criaElementos(filtered, Card)}</article>
+        <ButtonMenu className="btn">
+          View More
+        </ButtonMenu>
+      </Cards>
     </Conteiner>
   );
 }
