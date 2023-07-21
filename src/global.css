@@ -76,3 +76,7 @@ a, button{
   color: #fff;
   font-family: 'Open sans', sans-serif;
 }
+
+body{
+  max-width: 1440px;
+}
