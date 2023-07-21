@@ -1,5 +1,5 @@
 import {  css } from "styled-components";
-import colors from "../helpers/color";
+import { bodyHover } from "../helpers/tipografia";
 
 export const displayFlex = css`
     display: flex;
@@ -13,9 +13,8 @@ export const background = css`
 `
 
 export const icon = css`
-    color: ${colors.white};
     font-size: 16px;
-    &:hover{
-        color: ${colors.yellowLight};
+    path{
+        ${bodyHover};
     }
 `
