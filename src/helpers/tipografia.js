@@ -48,6 +48,18 @@ const bodyHover = css`
     }
 `;
 
+const HeaderDancing = css`
+  ${dancingBold}
+  font-size: 2.5em;
+  line-height: 1.2em;
+  margin-bottom: 25px;
+`;
+
+const ParagraphOpen = css`
+  ${openRegular};
+  font-size: 1em;
+  line-height: 1.5em;
+`;
 export {
   fonts,
   dancingBold,
@@ -59,4 +71,6 @@ export {
   openRegular,
   openRegularBlack,
   bodyHover,
+  HeaderDancing,
+  ParagraphOpen
 };
