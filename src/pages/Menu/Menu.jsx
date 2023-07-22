@@ -6,6 +6,8 @@ import menu from "../../data/menu";
 import Card from "../../components/Cards/Menu/Card";
 import { ButtonMenu } from "../../components/Button/styles";
 
+import { AnimatePresence} from 'framer-motion'
+
 function Menu() {
   const [activeLink, setActiveLink] = useState('All');
   const handleLinkClick = (to) => {
@@ -73,7 +75,9 @@ function Menu() {
       </Header>
 
       <Cards >
-        <article>{criaElementos(filtered, Card)}</article>
+        <AnimatePresence>
+          <article>{criaElementos(filtered, Card)}</article>
+        </AnimatePresence>
         <ButtonMenu className="btn">
           View More
         </ButtonMenu>
