@@ -38,8 +38,7 @@ function Header() {
                 <Link to='/about'
                  className={activeLink === '/about' ? 'link-active' : ''}
                  onClick={() => { handleLinkClick('/about') }}>
-                  Abou
-                 t</Link>
+                  About</Link>
               </li>
               <li>
                 <Link to='/table'
