@@ -77,6 +77,11 @@ a, button{
   font-family: 'Open sans', sans-serif;
 }
 
-body{
-  max-width: 1440px;
+h1, h2, h3, h4, h5, h6, .logo{
+  font-family: 'Dancing Script', cursive;
 }
+
+.subtitle{
+  font-family: 'Open sans', sans-serif;
+}
+
