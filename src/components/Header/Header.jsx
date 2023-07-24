@@ -7,11 +7,12 @@ import { ButtonMenu } from '../Button/styles';
 import { Conteiner, Background } from './styles';
 function Header() {
   const [activeLink, setActiveLink] = useState('/');
+  console.log(activeLink);
   const handleLinkClick = (to, type='link') => {
     setActiveLink(to);
   };
   return (
-    <Background>
+    <Background activeLink={activeLink}>
       <Conteiner>
         <Link to='/' className='logo'
         onClick={() => { handleLinkClick('/', 'logo') }}>
