@@ -1,12 +1,11 @@
 import { styled } from "styled-components";
-import {
-  openRegular,
-} from "../../../helpers/tipografia"
-import { displayFlex, alinhamento } from "../../styles"
+import { displayFlex } from "../../styles"
+import colors from "../../../helpers/color";
+import { fonts } from "../../../helpers/tipografia";
 
 export const Conteiner = styled.article`
   ${displayFlex};
-  background: #222831;
+  background: ${colors.blackBack};
   border-radius: 5px;
   width: 450px;
   height: 215px;
@@ -14,7 +13,7 @@ export const Conteiner = styled.article`
     ${displayFlex}
     width: 180px;
     height: 180px;
-    border: 5px solid yellow;
+    border: 5px solid ${colors.yellowLight};
     border-radius: 50%;
     overflow: hidden;
     margin: 0 15px 0 15px;
@@ -40,22 +39,18 @@ export const Conteiner = styled.article`
       display: inline-block;
       font-size: 40px;
       line-height: 48px;
-      font-weight: 700;
+      font-weight: ${fonts.weight[700]};
     }
     .price--small {
       margin-left: 3px;
+      
       font-size: 16px;
       line-height: 19px;
     }
-
-    .item,
-    .price,
-    .price--small {
-      font-family: "Dancing Script", cursive;
-    }
+    
     .item,
     .price--small {
-      font-weight: 500;
+      font-weight: ${fonts.weight[500]};
     }
 
     .item,

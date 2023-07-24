@@ -1,10 +1,12 @@
 import { styled } from "styled-components";
 import { displayFlex } from "../../styles"
 import { alinhamento } from "../../styles";
+import colors from "../../../helpers/color";
+import { fonts } from "../../../helpers/tipografia";
 
 export const Conteiner = styled.article`
   .descripition {
-    background: #222831;
+    background: ${colors.blackBack};
     border-radius: 5px;
     width: 450px;
     height: 180px;
@@ -20,11 +22,12 @@ export const Conteiner = styled.article`
     p {
       font-size: 15px;
       line-height: 23px;
+      
       margin-bottom: 15px;
     }
     h4 {
       font-size: 18px;
-      font-weight: 600;
+      font-weight:${fonts.weight[600]};
       margin-bottom: 10px;
     }
     span {
@@ -35,7 +38,7 @@ export const Conteiner = styled.article`
     ${displayFlex}
     position: relative;
     img {
-      border: 5px solid #ffbe33;
+      border: 5px solid ${colors.yellowDark};
     }
 
     &,
@@ -53,7 +56,7 @@ export const Conteiner = styled.article`
     border: 15px solid white;
     border-bottom-color: transparent;
     transform: translateX(-50%);
-    background: #ffbe33;
+    background: ${colors.yellowDark};
     margin-bottom: 12px;
     z-index: 5;
   }

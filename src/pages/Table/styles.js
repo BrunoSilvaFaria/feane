@@ -1,25 +1,21 @@
 import { styled } from "styled-components";
-import {
-  HeaderDancing,
-  ParagraphOpen
-} from "../../helpers/tipografia";
-import { displayFlex } from '../../components/styles';
+import { HeaderDancing, ParagraphOpen } from "../../helpers/tipografia";
+import { displayFlex } from "../../components/styles";
 import colors from "../../helpers/color";
-
 
 export const Conteiner = styled.section`
   height: 690px;
   margin: auto;
   width: 90%;
   max-width: 960px;
-  `;
+`;
 
 export const Form = styled.form`
   width: 100%;
   height: inherit;
   ${displayFlex};
 
-  .conteiner{
+  .conteiner {
     width: 100%;
   }
   .display {
@@ -31,16 +27,17 @@ export const Form = styled.form`
     ${HeaderDancing};
   }
 
-  h1, 
-  input, 
-  select{
-    color: ${colors.black};
+  h1,
+  input,
+  select {
+    color: ${colors.blackFont};
   }
-  
+
   .inputs {
     width: 450px;
   }
-  input, select {
+  input,
+  select {
     ${ParagraphOpen};
     border: 1px solid #999999;
     border-radius: 5px;

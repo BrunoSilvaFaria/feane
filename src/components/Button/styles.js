@@ -1,6 +1,5 @@
 import { styled, css } from "styled-components";
 import colors from "../../helpers/color";
-import { openRegular } from "../../helpers/tipografia";
 import { displayFlex } from "../styles";
 
 export const button = css` 
@@ -8,7 +7,6 @@ export const button = css`
     border: none;
     border-radius: 45px;
 
-    ${openRegular};
     font-size: 16px;
     
     display: inline-block;

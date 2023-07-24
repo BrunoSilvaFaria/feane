@@ -12,7 +12,7 @@ const Card = (props) => {
       </div>
 
       <div className="descripition">
-        <h4>{props.item.name}</h4>
+        <h3 className='subtitle'>{props.item.name}</h3>
         <p>{props.item.description}.item.</p>
 
         <div className="footer">

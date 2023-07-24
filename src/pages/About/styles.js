@@ -1,11 +1,11 @@
 import { styled } from "styled-components";
 import { HeaderDancing, ParagraphOpen } from "../../helpers/tipografia";
 import { displayFlex } from '../../components/styles';
-// import colors from "../../helpers/color";
+import colors from "../../helpers/color";
 
 
 export const Conteiner = styled.section`
-  background-color: #222831;
+  background-color: ${colors.blackBack};
   height: 900px;
   .conteiner{
     ${displayFlex};

@@ -1,10 +1,6 @@
 import { styled } from "styled-components";
-import {
-    dancingBoldBlack,
-    openRegularBlack
-} from "../../helpers/tipografia";
 import { displayFlex } from '../../components/styles';
-// import colors from "../../helpers/color";
+import colors from "../../helpers/color";
 
 
 export const Conteiner = styled.header`
@@ -16,7 +12,6 @@ export const Header = styled.header`
   width: 410px;
   margin: auto auto 50px auto;
   h3 {
-    ${dancingBoldBlack};
     font-size: 40px;
     margin: 100px auto 50px auto;
     text-align: center;
@@ -25,15 +20,15 @@ export const Header = styled.header`
   ul {
     ${displayFlex};
   }
-
-  a {
-    ${openRegularBlack};
+  a{
+    color: ${colors.blackFont};
+    padding: 7px 25px;
   }
   .active {
     color: #fff;
-    background-color: #222831;
-    padding: 7px 25px;
+    background-color: ${colors.blackBack};
     border-radius: 25px;
+    transition: none;
   }
 `;
 

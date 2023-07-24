@@ -1,18 +1,17 @@
 import { styled } from "styled-components";
-import {
-  openRegular,
-} from "../../../helpers/tipografia"
 import { displayFlex, alinhamento } from "../../styles"
+import colors from "../../../helpers/color";
+import { fonts } from "../../../helpers/tipografia";
 
 export const Conteiner = styled.section`
-    background: linear-gradient(to bottom, #f1f2f3 25px, #222831 25px);
+    background: linear-gradient(to bottom, ${colors.whiteBack} 25px, ${colors.blackBack} 25px);
     border-radius: 20px;
     width: 290px;
     height: 440px;
   .background {
     ${displayFlex}
     border-radius: 20px 20px 0px 45px;
-    background: #f1f2f3;
+    background: ${colors.whiteBack};
     margin-bottom: 25px;
     padding: 25px;
     height: 215px;
@@ -26,16 +25,12 @@ export const Conteiner = styled.section`
       scale: calc(1.1);
     }
   }
-  p,
-  span {
-    ${openRegular};
-  }
   .descripition {
     ${alinhamento};
     width: 83%;
-    h4 {
+    h3 {
       font-size: 1.25em;
-      font-weight: 600;
+      font-weight: ${fonts.weight[600]};
       margin-bottom: 15px;
     }
     p {

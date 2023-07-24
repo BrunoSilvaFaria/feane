@@ -1,12 +1,12 @@
 import { styled} from "styled-components";
 import { displayFlex } from '../styles';
-import { openRegular, dancingBold, dancingSemi } from "../../helpers/tipografia";
+
 import colors from "../../helpers/color";
+import { fonts } from "../../helpers/tipografia";
 
 export const Conteiner = styled.header`
-  background-color: #222831;
+  background-color: ${colors.blackBack};
   height: 456px;
-  ${openRegular};
   font-size: 1em;
   line-height: 24px;
   text-align: center;
@@ -34,14 +34,14 @@ export const Conteiner = styled.header`
       margin-bottom: 25px;
     }
     h2 {
-      ${dancingBold};
       font-size: 38px;
       line-height: 38px;
+      font-weight: ${fonts.weight[700]};
     }
     h3 {
-      ${dancingSemi};
       font-size: 28px;
       line-height: 34px;
+      font-weight: ${fonts.weight[600]};
     }
 
     .iconConteiner {
@@ -51,6 +51,7 @@ export const Conteiner = styled.header`
       }
     }
     p {
+      color: ${colors.whiteFont};
       margin-bottom: 20px;
     }
     .icons-social,
@@ -61,13 +62,13 @@ export const Conteiner = styled.header`
     }
 
     li a {
-      background: white;
+      background: #fff;
       width: 30px;
       height: 30px;
       border-radius: 50%;
       margin-right: 5px;
       .icon path {
-        color: #222831;
+        color: ${colors.blackFont};
         &:hover{
           color: ${colors.yellowLight};
         }

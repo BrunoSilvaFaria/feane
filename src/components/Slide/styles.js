@@ -1,12 +1,13 @@
 import { styled } from "styled-components";
 import { displayFlex } from "../styles";
+import colors from "../../helpers/color";
+import { fonts } from "../../helpers/tipografia";
 
 export const Conteiner = styled.article`
     h2{
-        color: #0c0c0c;
-        font-family: 'Dancing Script';
+        color: ${colors.blackFont};
         font-size: 40px;
-        font-weight: 700;
+        font-weight: ${fonts.weight[700]};
         margin-bottom: 50px;
         text-align: center;
     }
@@ -30,7 +31,7 @@ export const Conteiner = styled.article`
       justify-content: center;
       height: 45px;
       width: 45px;
-      background: #ffbe33;
+      background: ${colors.yellowLight};
       border-radius: 50%;
     }
     span {

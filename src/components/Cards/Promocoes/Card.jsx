@@ -14,7 +14,7 @@ const Card = (props) => {
       <div className="descripition">
         <h4 className='item'>{props.item.name}</h4>
 
-          <span className='price'>{props.item.discount}%<span className='price--small'>Off</span></span>
+          <h3 className='price'>{props.item.discount}%<span className='price--small'>Off</span></h3>
         <ButtonMenu className='btn'>
             <span>Order Now</span>
             <IconCar className="icon" />
