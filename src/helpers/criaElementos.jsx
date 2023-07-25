@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function criaElementos(arquivo, Componente) {
   return arquivo.map((item) => {
     return (
-      <motion.div
+      <motion.div className="motion"
         key={item.id}
         layout
         initial={{ scale: 0 }}
