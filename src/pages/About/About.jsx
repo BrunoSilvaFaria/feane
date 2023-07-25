@@ -5,7 +5,6 @@ function About() {
   return (
     <Conteiner>
       <div className="conteiner">
-        <img src="/assets/about-img.png" alt="" />
         <section>
           <h1>We Are Feane</h1>
           <p>
@@ -17,6 +16,7 @@ function About() {
           </p>
           <ButtonMenu className="btn">Read More</ButtonMenu>
         </section>
+        <img src="/assets/about-img.png" alt="" />
       </div>
     </Conteiner>
   );
