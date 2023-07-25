@@ -4,10 +4,15 @@ import colors from "../../../helpers/color";
 import { fonts } from "../../../helpers/tipografia";
 
 export const Conteiner = styled.section`
-    background: linear-gradient(to bottom, ${colors.whiteBack} 25px, ${colors.blackBack} 25px);
-    border-radius: 20px;
-    width: 290px;
-    height: 440px;
+  background: linear-gradient(
+    to bottom,
+    ${colors.whiteBack} 25px,
+    ${colors.blackBack} 25px
+  );
+  border-radius: 20px;
+  height: inherit;
+  width: 100%;
+  
   .background {
     ${displayFlex}
     border-radius: 20px 20px 0px 45px;
@@ -46,5 +51,5 @@ export const Conteiner = styled.section`
       font-weight: 500;
       line-height: 1.2em;
     }
-}
-  `
+  }
+`;
