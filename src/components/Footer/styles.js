@@ -10,7 +10,12 @@ export const Conteiner = styled.header`
   font-size: 1em;
   line-height: 24px;
   text-align: center;
-  .alinhamento{
+  @media (max-width: 765px) {
+    & {
+      height: inherit;
+    }
+  }
+  .alinhamento {
     ${displayFlex};
     flex-wrap: wrap;
     height: inherit;
@@ -21,10 +26,15 @@ export const Conteiner = styled.header`
     margin: auto;
     margin-bottom: 30px;
   }
-  .conteiners,
   .icons-social {
     ${displayFlex};
     align-items: flex-start;
+  }
+  @media (min-width: 765px) {
+    .conteiners {
+      ${displayFlex};
+      align-items: flex-start;
+    }
   }
 
   .conteiner {
@@ -69,15 +79,29 @@ export const Conteiner = styled.header`
       margin-right: 5px;
       .icon path {
         color: ${colors.blackFont};
-        &:hover{
+        &:hover {
           color: ${colors.yellowLight};
         }
       }
     }
   }
-  footer{
+  @media (max-width: 765px) {
+    .conteiner {
+      margin: auto;
+      width: 100%;
+      max-width: 510px;
+    }
+    .conteiner:first-child{
+      margin: 80px auto 0 auto;
+    }
+    h2,
+    h3 {
+      margin: 50px auto 25px auto;
+    }
+  }
+  footer {
     width: 100%;
-    p{
+    p {
       margin-bottom: 25px;
     }
   }
