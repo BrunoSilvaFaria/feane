@@ -23,7 +23,8 @@ export const Conteiner = styled.section`
   }
 
   img {
-    width: 445px;
+    width: 100%;
+    max-width: 445px;
   }
 
   section {
