@@ -11,6 +11,7 @@ export const Background = styled.div`
 export const Conteiner = styled.header`
     height: 90px;
     width: 90%;
+    max-width: 1130px;
     margin: auto;
     &, 
     ul,
@@ -28,7 +29,6 @@ export const Conteiner = styled.header`
         margin-right: 35px;
     }
     nav a{
-
         text-transform: uppercase;
     }
 
