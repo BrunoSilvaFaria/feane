@@ -6,9 +6,9 @@ function Table() {
     <Conteiner>
       <Form>
         <div className="conteiner">
-          <h1>Book A Table</h1>
           <div className="display">
             <div className="inputs">
+          <h1>Book A Table</h1>
               <input type="text" placeholder="Your Name" />
               <input type="text" placeholder="Phone Number" />
               <input type="email" placeholder="Your Email" />

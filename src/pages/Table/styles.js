@@ -6,25 +6,32 @@ import colors from "../../helpers/color";
 export const Conteiner = styled.section`
   height: 690px;
   margin: auto;
-  width: 90%;
   max-width: 960px;
+  @media (max-width: 990px){
+    max-width: 720px;
+    height: inherit;
+    margin: 70px auto 100px auto;
+  }
 `;
 
 export const Form = styled.form`
   width: 100%;
   height: inherit;
   ${displayFlex};
+  flex-wrap: wrap;
 
   .conteiner {
     width: 100%;
   }
   .display {
     ${displayFlex};
-    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   h1 {
     ${HeaderDancing};
+    margin: 20px auto 30px auto ;
   }
 
   h1,
@@ -43,7 +50,7 @@ export const Form = styled.form`
     border-radius: 5px;
     padding: 15px 20px;
     margin-bottom: 25px;
-    width: 450px;
+    width: 100%;
   }
 
   .btn {
@@ -56,6 +63,32 @@ export const Form = styled.form`
   iframe {
     border-radius: 10px;
     height: 345px;
+  }
+
+  .iframe{
     width: 450px;
+  }
+
+  @media (max-width: 990px) {
+    .inputs,
+    .iframe {
+      width: 330px;
+    }
+  }
+  @media (max-width: 765px) {
+    .btn {
+      margin-bottom: 50px;
+    }
+    .inputs,
+    .iframe {
+      width: 510px;
+      margin: auto;
+    }
+  }
+  @media (max-width: 575px) {
+    .inputs,
+    .iframe {
+      width: 100%;
+    }
   }
 `;
