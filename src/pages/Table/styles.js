@@ -8,6 +8,7 @@ export const Conteiner = styled.section`
   margin: auto;
   max-width: 960px;
   @media (max-width: 990px){
+    width: 95%;
     max-width: 720px;
     height: inherit;
     margin: 70px auto 100px auto;
