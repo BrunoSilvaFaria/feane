@@ -11,6 +11,16 @@ export const Conteiner = styled.article`
     width: 450px;
     height: 180px;
     margin-bottom: 30px;
+    @media (max-width: 990px) {
+      width: 330px;
+      height: 225px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    @media (max-width: 438px) {
+      height: 205px;
+    }
     div {
       ${alinhamento};
       ${displayFlex}
@@ -22,12 +32,12 @@ export const Conteiner = styled.article`
     p {
       font-size: 15px;
       line-height: 23px;
-      
+
       margin-bottom: 15px;
     }
     h4 {
       font-size: 18px;
-      font-weight:${fonts.weight[600]};
+      font-weight: ${fonts.weight[600]};
       margin-bottom: 10px;
     }
     span {
