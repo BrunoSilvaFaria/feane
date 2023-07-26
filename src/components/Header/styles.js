@@ -4,17 +4,12 @@ import colors from '../../helpers/color';
 
 export const Background = styled.div`
   background: url("/assets/hero-bg.jpg");
-  background-position: ${(props) =>
-    props.activeLink !== "/" ? "top" : "center"};
+  background-position: ${(props) => props.activeLink !== "/" ? "top" : "center"};
   width: 100%;
-  height: ${(props) => props.activeLink !== "/" && !props.showElement ? "90px" : "990px"};
-    
-  @media (min-width: 990px){
-    &{
-      height: ${(props) => props.activeLink !== "/" && !props.showElement ? "90px" : "630px"};
+  height: ${(props) => props.activeLink !== "/" ? "90px" : "630px"};
+  @media (max-width: 990px) {
+      height: ${(props) => props.activeLink !== "/" && !props.showElement ? "90px" : "990px"};
     }
-}
-    
 `;
 export const Conteiner = styled.header`
   height: 90px;
