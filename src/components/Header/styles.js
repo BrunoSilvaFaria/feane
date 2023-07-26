@@ -9,8 +9,10 @@ export const Background = styled.div`
   width: 100%;
   height: ${(props) => props.activeLink !== "/" && !props.showElement ? "90px" : "990px"};
     
-  @media (min-width: 990){
+  @media (min-width: 990px){
+    &{
       height: ${(props) => props.activeLink !== "/" && !props.showElement ? "90px" : "630px"};
+    }
 }
     
 `;
@@ -64,9 +66,6 @@ export const Conteiner = styled.header`
     }
     li:last-child {
       margin-bottom: 30px;
-    }
-    .menu--responsivo {
-      position: relative;
     }
   }
   nav a {

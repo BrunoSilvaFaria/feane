@@ -65,7 +65,7 @@ function Header() {
         </div>
         
         {showElement && (
-          <div className={`menu--responsivo ${showElement ? "active" : ""}`}>
+          <div className='menu--responsivo'>
             <nav>
               <ul>
                 <li>
