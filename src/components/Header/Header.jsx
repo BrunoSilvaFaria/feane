@@ -37,11 +37,9 @@ function Header() {
       console.log('fui clicado')
     };
     const [activeLink, setActiveLink] = useState("/");
-    const handleLinkClick = (to) => {
+    const handleLinkClick = (to, type = "link") => {
       setActiveLink(to);
-      if (window.innerWidth <= 990) {
-        showOrHide();
-      }
+      if (window.innerWidth < 990 && type !== 'logo') showOrHide();
     };
   return (
     <Background activeLink={activeLink} showElement={showElement}>
