@@ -4,7 +4,13 @@ import { IconCar, IconSearch, IconUser } from '../../helpers/Icon';
 import { ButtonMenu } from '../Button/styles';
 import { useState, useEffect } from 'react';
 import Hamburger from 'hamburger-react';
+
+// Import Swiper styles
+import 'swiper/css';
+import "swiper/css/navigation";
+
 import { Conteiner, Background } from './styles';
+
 function Header() {
     const [showElement, setShowElement] = useState(window.innerWidth >= 900);
 
@@ -40,11 +46,11 @@ function Header() {
     const handleLinkClick = (to, type = "link") => {
       setActiveLink(to);
       if (window.innerWidth < 990 && type !== 'logo') showOrHide();
-    };
+  };
   return (
     <Background activeLink={activeLink} showElement={showElement}>
       <Conteiner>
-        <div className='menu'>
+        <div className="menu">
           <Link
             to="/"
             className="logo"
@@ -58,12 +64,13 @@ function Header() {
             <Hamburger
               direction="right"
               toggled={showElement}
-              toggle={setShowElement} />
+              toggle={setShowElement}
+            />
           </div>
         </div>
-        
+
         {showElement && (
-          <div className='menu--responsivo'>
+          <div className="menu--responsivo">
             <nav>
               <ul>
                 <li>
@@ -129,6 +136,7 @@ function Header() {
           </div>
         )}
       </Conteiner>
+     
     </Background>
   );
 }
